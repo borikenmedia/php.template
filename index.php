@@ -6,6 +6,8 @@ header("Content-type: text/html; Charset: utf-8; Pragma: no-cache;");
 /* Micro CMS v2 Release Under GPL3 By dyewilliam */
 include("config.php");
 
-echo("Under Construction");
+$tpl = new template();
+
+$tpl->parse_tpl($tags)->output();
 
 ?>
